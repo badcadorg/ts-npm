@@ -1,6 +1,6 @@
 {
   "name": "ts-npm",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Use Typescript to define your NPM package.",
   "repository": {
     "type": "git",

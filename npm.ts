@@ -1,6 +1,6 @@
 const npmPackage: any = {
   name: 'ts-npm',
-  version: '0.1.0',
+  version: '0.0.0',
   description: 'Manage package.json files in Typescript npm.ts files.',
   repository: {
     type: 'git',
