@@ -4,7 +4,7 @@ const npmPackage: any = {
   description: 'Manage package.json files in Typescript npm.ts files.',
   repository: {
     type: 'git',
-    url: 'https://github.com/ts-npm/ts-npm.git'
+    url: 'https://github.com/badcadorg/ts-npm'
   },
   private: false,
   license: 'MIT',

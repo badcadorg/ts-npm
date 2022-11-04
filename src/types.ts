@@ -4,19 +4,20 @@
 // All "@types" in .dependencies automatically get moved to .devDependencies when package.json is generated.
 // Group your dependencies logically!
 export interface NPMPackage {
-  tsconfig: string;
+  tsconfig?: string;
   name: string;
   version: string;
   description: string;
-  repository: {
+  repository?: {
     type: string;
     url: string;
   },
   license: string;
   private: boolean;
-  dependencies: Record<string, string>;
-  devDependencies: Record<string, string>;
-  scripts: Record<string, string>;
+  type?: 'module' | 'commonjs';
+  dependencies?: Record<string, string>;
+  devDependencies?: Record<string, string>;
+  scripts?: Record<string, string>;
   bin?: string | string[];
   files?: string[];
   main?: string;

@@ -7,8 +7,8 @@ export default class NPMPackageJSONGenerator {
   constructor(npmPackage: NPMPackage) {
     console.debug('npm.ts', npmPackage);
 
-    const deps = npmPackage.dependencies;
-    const devDeps = npmPackage.devDependencies;
+    const deps = npmPackage.dependencies || {};
+    const devDeps = npmPackage.devDependencies || {};
 
     for (const dep in deps) {
       const depVersion = deps[dep];
